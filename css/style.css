@@ -466,7 +466,7 @@ h5 {
 @media (min-width: 768px) {
   h5 {
     bottom: 2rem;
-    padding-left: 2.5rem;
+    padding-left: 1rem;
     padding-right: 2.5rem;
   }
 }
@@ -630,8 +630,24 @@ h5 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-48 {
@@ -659,6 +675,10 @@ h5 {
 
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .mb-6 {
@@ -699,6 +719,10 @@ h5 {
 
 .h-8 {
   height: 2rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-44 {
@@ -747,6 +771,12 @@ h5 {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -765,8 +795,17 @@ h5 {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.self-end {
+  align-self: flex-end;
+}
+
 .border-2 {
   border-width: 2px;
+}
+
+.border-red-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -788,6 +827,11 @@ h5 {
   padding-right: 1.5rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -798,12 +842,24 @@ h5 {
   padding-bottom: 3rem;
 }
 
+.pl-12 {
+  padding-left: 3rem;
+}
+
 .pr-0 {
   padding-right: 0px;
 }
 
+.pt-40 {
+  padding-top: 10rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-alata {
+  font-family: Alata, sans-serif;
 }
 
 .font-sans {
@@ -813,6 +869,11 @@ h5 {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -876,6 +937,11 @@ h5 {
     margin-right: calc(2rem * var(--tw-space-x-reverse));
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
+
+  .item-container {
+    padding-left: .4rem;
+    padding-right: .4rem;
+  }
 }
 
 .item {
@@ -925,7 +991,7 @@ h5 {
 
 /* Hamburger Menu */
 
-.hamburger{
+.hamburger {
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -935,7 +1001,7 @@ h5 {
 
 .hamburger-top,
 .hamburger-middle,
-.hamburger-bottom{
+.hamburger-bottom {
   position: absolute;
   width: 24px;
   height: 2px;
@@ -1082,8 +1148,17 @@ h5 {
     padding-bottom: 5rem;
   }
 
+  .md\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
   .md\:pl-20 {
     padding-left: 5rem;
+  }
+
+  .md\:pr-3 {
+    padding-right: 0.75rem;
   }
 
   .md\:text-left {

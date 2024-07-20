@@ -4,7 +4,7 @@
 
 @layer base {
   h5 {
-    @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black;
+    @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:pl-4 md:pr-10 group-hover:scale-110 group-hover:text-black;
   }
 }
 
@@ -15,11 +15,11 @@
 }
 
 .item-container {
-  @apply flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
+  @apply flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8 md:px-[.4rem];
 }
 
 .item {
-  @apply relative overflow-hidden md:w-1/4;
+  @apply relative overflow-hidden md:w-1/4 ;
 }
 
 .item-gradient {
@@ -41,7 +41,7 @@
 
 
 /* Hamburger Menu */
-.hamburger{
+.hamburger {
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -51,7 +51,7 @@
 
 .hamburger-top,
 .hamburger-middle,
-.hamburger-bottom{
+.hamburger-bottom {
   position: absolute;
   width: 24px;
   height: 2px;
